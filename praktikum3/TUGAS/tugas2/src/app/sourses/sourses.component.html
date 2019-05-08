@@ -1,0 +1,40 @@
+<div>
+    <h1>{{iniTugas}}</h1>
+    <h1>{{currentDate|date:"fullDate"}}</h1>
+</div>
+  
+<h1>{{nama}}</h1>
+<h1>{{alamat}}</h1>
+
+
+<h1>
+  <div style ="text-align: left" *ngFor = "let b of Hobby">
+  {{b.Hobby}}
+  {{b.saya}}
+</div>
+</h1>
+
+<h1>
+  <table border = 1>
+    <thead>
+      <th>
+        NO
+      </th>
+      <th>
+        Hobby
+      </th>
+      <th>
+        Keterangan
+      </th>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let a of Sourses">
+        <td>{{a.NO}}</td>
+        <td>{{a.Hobby}}</td>
+        <td>{{a.Keterangan}}</td>
+      </tr>
+    </tbody>
+  </table>
+</h1>
+
+
