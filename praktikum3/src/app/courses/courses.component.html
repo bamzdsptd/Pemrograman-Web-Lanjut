@@ -1,0 +1,24 @@
+<p>
+  courses works!
+</p>
+<p>
+  {{ getTitle() }}
+</p>
+
+<table>
+  <thead>
+    <th>
+      #ID
+    </th>
+    <th>Courses name</th>
+  </thead>
+  <tbody>
+    <tr *ngfor="let Course of Courses"></tr>
+    <td>
+      {{ Courses.id }}
+    </td>
+    <td>
+      {{Courses.name }}
+    </td>
+  </tbody>
+</table>

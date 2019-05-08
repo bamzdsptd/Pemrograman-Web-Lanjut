@@ -1,0 +1,28 @@
+<p>
+  {{Nama}}
+</p>
+<h1>
+    <img src ="assets/abc.jpeg">
+</h1>
+
+<body>
+  {{Ket1}}
+  <br><br>
+  Nama : <input type="text" [value]=" " (keyup)="nama = $event.target.value;onKeyUp()">
+  <br>
+  Pass : <input type="password" [value]=" " (keyup)="pass = $event.target.value;onKeyUp()">
+
+  <h2>
+    NAMA : {{nama}}
+    <br>
+    PASS : {{pass}}
+  </h2>
+
+  {{Ket2}}
+  <br><br>
+  Alamat : <input type="text" [value]="alamat">
+  <br>
+  <button type="button" value= "JL. Mawar 3" (click)="alamat = $event.target.value;onKeyUp()">Submit</button>
+</body>
+
+
